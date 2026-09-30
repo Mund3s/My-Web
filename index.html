@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Campos · Nube, CI/CD y desarrollo</title>
+  <meta name="description" content="Portafolio de Carlos Mauricio Campos Gutiérrez, tecnólogo en Análisis y Desarrollo de Sistemas de Información (SENA). Nube, CI/CD con GitHub Actions y desarrollo de software.">
+  <meta property="og:title" content="Carlos Campos · Nube, CI/CD y desarrollo">
+  <meta property="og:description" content="Nube, CI/CD y desarrollo de software en Bogotá.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mund3s.github.io/My-Web/">
+  <meta property="og:image" content="https://mund3s.github.io/My-Web/assets/cortesagua-mapa.jpg">
+  <meta property="og:image:width" content="1568">
+  <meta property="og:image:height" content="579">
+  <meta property="og:image:alt" content="Mapa de cortes de agua de Bogotá, uno de los proyectos del portafolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carlos Campos · Nube, CI/CD y desarrollo">
+  <meta name="twitter:description" content="Nube, CI/CD y desarrollo de software en Bogotá.">
+  <meta name="twitter:image" content="https://mund3s.github.io/My-Web/assets/cortesagua-mapa.jpg">
+  <link rel="icon" href="assets/mango-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var storedTheme = localStorage.getItem("theme");
+      if (storedTheme === "light" || storedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", storedTheme);
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="brand" href="#inicio">Carlos Campos</a>
+      <div class="nav-right">
+        <button class="theme-toggle" type="button" aria-label="Cambiar a modo claro">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <p class="eyebrow">Bogotá, Colombia</p>
+      <h1>Hola, soy Carlos Campos.</h1>
+      <p class="lead">
+        Tecnólogo en Análisis y Desarrollo de Sistemas de Información. Construyo y despliego
+        aplicaciones en la <strong>nube</strong> con <strong>CI/CD en GitHub Actions</strong>, y llevo
+        a cada proyecto la mirada de quien ha estado del lado del <strong>soporte</strong>: resolver el
+        problema real del usuario.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-ghost" href="#contacto">Contactarme</a>
+      </div>
+    </section>
+
+    <section class="section container" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="about">
+        <div>
+          <p>
+            Soy tecnólogo informático egresado del SENA, con experiencia en soporte a usuarios de todos
+            los niveles, implementación de soluciones y atención de incidencias. Me gusta entender el
+            problema de fondo, documentarlo y convertirlo en algo que otros puedan usar sin fricción.
+          </p>
+          <p>
+            Esa mirada de soporte es la que llevo al desarrollo: hoy estoy construyendo
+            <strong>Cortes de agua Bogotá</strong>, una API en Azure Functions y un mapa en React que
+            ubican en tiempo real los cortes programados por el Acueducto de Bogotá. Antes construí
+            <strong>Mango</strong>, un asistente virtual para Microsoft Teams que guía a los usuarios a
+            resolver por sí mismos las solicitudes más frecuentes de la mesa de ayuda, desplegado en
+            Azure con un pipeline de GitHub Actions.
+          </p>
+          <p>
+            Hoy profundizo en ecosistemas en la nube (AWS, Google Cloud), observabilidad con
+            OpenTelemetry y desarrollo móvil.
+          </p>
+        </div>
+        <div class="skills">
+          <h3>Tecnologías</h3>
+          <ul class="tags">
+            <li>JavaScript</li><li>Node.js</li><li>Express</li><li>HTML</li><li>CSS</li>
+            <li>Angular</li><li>PHP</li><li>Laravel</li><li>Python</li><li>SQL</li>
+            <li>Bash</li><li>Microsoft Teams</li>
+          </ul>
+          <h3>Nube y DevOps</h3>
+          <ul class="tags">
+            <li>Azure</li><li>AWS</li><li>GitHub Actions</li><li>CI/CD</li><li>Bicep (IaC)</li>
+          </ul>
+          <h3>Fortalezas</h3>
+          <ul class="tags tags-soft">
+            <li>Análisis técnico de problemas</li><li>Diagnóstico de software</li>
+            <li>Atención al cliente</li><li>Transferencia de conocimiento</li><li>Trabajo en equipo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="proyectos">
+      <h2>Proyectos</h2>
+
+      <article class="featured">
+        <div class="featured-icon" aria-hidden="true">
+          <svg viewBox="0 0 160 160" width="160" height="160">
+            <circle cx="80" cy="80" r="80" fill="var(--accent-soft)"></circle>
+            <path d="M80 40c-16 22-28 38-28 54a28 28 0 0 0 56 0c0-16-12-32-28-54z" fill="var(--accent-strong)"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">Proyecto destacado · en desarrollo · 2026</p>
+          <h3>Cortes de agua Bogotá · API y mapa en vivo</h3>
+          <p>
+            Una Azure Function en Python scrapea a diario la programación de cortes de agua del
+            Acueducto de Bogotá, la normaliza y la expone por HTTP con identidad administrada, sin
+            contraseñas en la cadena de conexión. Una app en React y MapLibre GL JS consume esa API
+            y ubica los cortes sobre un mapa vectorial del perímetro urbano, con estilo de afiche:
+            rotado 90°, en escala de grises y recortado a los límites oficiales de la ciudad.
+          </p>
+          <p>
+            Al abrir el mapa resalta los barrios afectados hoy y deja moverse entre días con una tira
+            de fechas, además de buscar por barrio, localidad o dirección con geocodificación de IDECA.
+          </p>
+          <ul class="checks">
+            <li>Scraper diario con deduplicación por hash y migraciones idempotentes</li>
+            <li>Emparejamiento de nombres contra 5.102 barrios oficiales de IDECA</li>
+            <li>Renderizado a medida: mapa rotado, máscara geográfica y marcadores numerados</li>
+            <li>Búsqueda por barrio, localidad o dirección con geocodificación</li>
+          </ul>
+          <ul class="tags">
+            <li>Python</li><li>Azure Functions</li><li>Azure SQL</li><li>React</li><li>Vite</li><li>MapLibre GL JS</li>
+          </ul>
+          <div class="featured-links">
+            <a class="link" href="https://orange-beach-02900b010.4.azurestaticapps.net/" target="_blank" rel="noopener">Ver mapa en vivo →</a>
+            <a class="link" href="https://github.com/Mund3s/CortesAguaFront" target="_blank" rel="noopener">Código del mapa →</a>
+            <a class="link" href="https://github.com/Mund3s/CortesAgua" target="_blank" rel="noopener">Código de la API →</a>
+          </div>
+        </div>
+        <img class="featured-shot" src="assets/cortesagua-mapa-demo.gif" alt="Demostración del mapa de cortes de agua: se elige el corte de Kennedy, el mapa hace zoom al barrio Galán y se abre una ficha con el trabajo, el horario y el lugar del corte" loading="lazy">
+      </article>
+
+      <article class="featured">
+        <img src="assets/mango-logo.png" alt="Logo de Mango, un perro salchicha con circuitos" width="160" height="160">
+        <div>
+          <p class="eyebrow">Proyecto anterior · 2026</p>
+          <h3>Mango · Bot de soporte para Microsoft Teams</h3>
+          <p>
+            Asistente virtual de mesa de ayuda construido para Megalinea. Recibe a cada usuario con un
+            menú de tarjetas interactivas (Adaptive Cards) y lo guía paso a paso en los casos más
+            comunes, con navegación entre menús y un camino claro hacia la mesa de ayuda cuando hace falta
+            un analista.
+          </p>
+          <p>
+            Cada cambio en <code>main</code> se construye y se despliega automáticamente en Azure App
+            Service con GitHub Actions, usando inicio de sesión federado (OIDC) sin contraseñas guardadas.
+            La infraestructura está descrita como código en Bicep.
+          </p>
+          <ul class="checks">
+            <li>Desbloqueo de usuario de red y de Megasoft</li>
+            <li>Fallas de Outlook: buzones asociados, espacio, perfil que no carga</li>
+            <li>Configuración y fallas de WorkSpace</li>
+            <li>Guía para el primer inicio de sesión</li>
+          </ul>
+          <ul class="tags">
+            <li>Node.js</li><li>Microsoft Teams SDK</li><li>Adaptive Cards</li><li>Azure App Service</li><li>GitHub Actions</li><li>Bicep</li>
+          </ul>
+          <a class="link" href="https://github.com/Mund3s/MangoMegalinea" target="_blank" rel="noopener">Ver código en GitHub →</a>
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Citas médicas con Node y Express</h3>
+          <p>Aplicación web para gestionar médicos, pacientes y citas, con vistas en Handlebars y base de datos MySQL.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>Handlebars</li><li>MySQL</li></ul>
+          <a class="link" href="https://github.com/Mund3s/Entrega-Node-Express" target="_blank" rel="noopener">Código →</a>
+        </article>
+        <article class="card">
+          <h3>Login con Laravel y Angular</h3>
+          <p>Autenticación con un back end en Laravel 8 y un front end en Angular 12.</p>
+          <ul class="tags"><li>Laravel</li><li>PHP</li><li>Angular</li></ul>
+          <a class="link" href="https://github.com/Mund3s/loginLara8Angu12" target="_blank" rel="noopener">Código →</a>
+        </article>
+        <article class="card">
+          <h3>Ejercicio de médicos</h3>
+          <p>Proyecto del curso de back end de la Universidad Distrital para gestionar información de médicos.</p>
+          <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          <a class="link" href="https://github.com/Mund3s/medicosDistriEjercicio" target="_blank" rel="noopener">Código →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="experiencia">
+      <h2>Experiencia</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">Ago 2022 – Jul 2023</p>
+          <h3>Coordinador de Implementación y Soporte · AZLOGICA S.A.S.</h3>
+          <ul>
+            <li>Atención y resolución de incidencias de usuarios por teléfono y correo.</li>
+            <li>Mantenimiento de la base de datos y registros; elaboración de informes y reportes.</li>
+            <li>Coordinación con distintas áreas y planificación de reuniones.</li>
+            <li>Implementación de políticas y procedimientos, y apoyo en el desarrollo de proyectos.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="when">Feb 2022 – Ago 2022</p>
+          <h3>Practicante profesional · AZLOGICA S.A.S.</h3>
+          <ul>
+            <li>Implementación de programas y proyectos asignados, y mejora continua de productos.</li>
+            <li>Atención a clientes y proveedores de forma presencial, telefónica y por correo.</li>
+            <li>Registro de información en el sistema y gestión de documentación.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2 class="subhead">Formación</h2>
+      <ul class="edu">
+        <li><strong>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</strong><span>SENA · 2020 – 2022</span></li>
+        <li><strong>Desarrollo Back End, nivel básico (125 h)</strong><span>2023</span></li>
+        <li><strong>Cursos de HTML y CSS, JavaScript, Node.js y Express</strong><span>2023</span></li>
+      </ul>
+    </section>
+
+    <section class="section container contact" id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes una vacante o un proyecto en mente? Escríbeme.</p>
+      <form class="contact-form" id="contact-form">
+        <input type="hidden" name="access_key" value="0a14a2af-53d6-4bc3-a763-ffb3783452de">
+        <input type="hidden" name="subject" value="Nuevo mensaje desde el portafolio">
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <label for="contact-name">Nombre</label>
+          <input type="text" id="contact-name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="contact-email">Correo</label>
+          <input type="email" id="contact-email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="contact-message">Mensaje</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="contact-links">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/cmcampos3" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/Mund3s" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year">2026</span> Carlos Mauricio Campos Gutiérrez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
